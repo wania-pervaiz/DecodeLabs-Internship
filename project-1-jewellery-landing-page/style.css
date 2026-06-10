@@ -1,0 +1,371 @@
+/* ==========================================================================
+   PREMIUM EDITORIAL TYPOGRAPHY & RESET STYLES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: #fcfaf7; /* Ultra-luxurious off-white background */
+    color: #4d0d2a;            /* Sangria for general text */
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+/* ==========================================================================
+   1. FIXED HEADER NAVIGATION (Champagne & Rosewood Accents)
+   ========================================================================== */
+.header-nav-01 {
+    height: 80px; 
+    width: 100%;
+    background-color: #d3c4bd; /* Sophisticated muted taupe/champagne */
+    border-bottom: 1px solid rgba(77, 13, 42, 0.08); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    color: #4d0d2a; /* Deep Sangria */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #531731; /* Rosewood */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: #782e46; /* Lighter Rose shade on hover */
+}
+
+/* ==========================================================================
+   2. HERO BANNER SECTION (Left-Aligned, Blending into Shadow)
+   ========================================================================== */
+.hero-container {
+    height: 65vh; 
+    margin-top: 80px; 
+    
+    /* Slight tint overlay that preserves the bright right side but grounds the left side text */
+    background-image: linear-gradient(rgba(211, 196, 189, 0.15), rgba(211, 196, 189, 0.15)), url('download.gif');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-left: 8%;           
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.hero-content {
+    text-align: left;           
+    max-width: 550px;           
+}
+
+.main-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3.5rem;
+    font-weight: 400; /* Editorial light weight style */
+    font-style: italic; /* Beautiful romantic italics */
+    color: #4d0d2a;   /* Sangria - Blends naturally with the left side shadows */
+    margin-bottom: 28px;
+    letter-spacing: -0.5px;
+}
+
+.call-to-action {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: #4d0d2a;  /* Rich Sangria button block */
+    color: #e7ceb5;             /* Warm Beige font color */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    border-radius: 0px;         /* Sharp square edges look cleaner for minimalism */
+    transition: all 0.3s ease;
+}
+
+.call-to-action:hover {
+    background-color: #531731;  /* Shifts to Rosewood on hover */
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. ABOUT US TEXT BLOCK
+   ========================================================================== */
+.about-section {
+    background-color: #fcfaf7;
+    padding: 90px 20px 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #4d0d2a;
+    letter-spacing: 1px;
+}
+
+.about-container p {
+    font-size: 0.95rem;
+    color: #531731;
+    opacity: 0.85;
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   4. PRODUCT GRID CONTAINER
+   ========================================================================== */
+.hent-cooles {
+    padding: 0 0 90px 0; 
+    background-color: #fcfaf7; 
+}
+
+.grid-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.grid-module {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px; 
+    margin-bottom: 40px; 
+}
+
+.feature-small {
+    width: 25%; 
+}
+
+.image-box {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    background-color: #e7ceb5; /* Beige placeholders matching the warm vibe */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    border: 1px solid rgba(83, 23, 49, 0.08);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.grid-module:hover img {
+    transform: scale(1.04); /* Soft luxury zoom dynamic */
+}
+
+.panel-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #fcfaf7;
+    color: #4d0d2a; 
+    padding: 5px 12px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-content h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #4d0d2a;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #782e46; /* Soft elegant rose highlight for price tags */
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: #531731; 
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   5. HIGH-CONTRAST MODERN FOOTER (Deep Luxury Statement)
+   ========================================================================== */
+.drafting-blue {
+    height: auto; 
+    background-color: #4d0d2a; /* Solid deep Sangria background */
+    border-top: 1px solid #531731;
+    color: #e7ceb5; /* Warm Beige font readability */
+    display: flex;
+    align-items: center;
+    padding: 70px 0 30px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-grid-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    width: 30%;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    color: #e7ceb5;
+}
+
+.footer-about {
+    font-size: 0.85rem;
+    color: #d3c4bd;
+    line-height: 1.7;
+    margin-top: 14px;
+    opacity: 0.9;
+}
+
+.footer-col h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #e7ceb5; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-col a {
+    display: block;
+    color: #d3c4bd; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    transition: color 0.2s ease;
+    opacity: 0.9;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+.contact-item {
+    font-size: 0.85rem;
+    color: #d3c4bd;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.contact-item strong {
+    color: #e7ceb5;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(231, 206, 181, 0.15);
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blueprint-tracking-tag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #782e46;
+    font-weight: 700;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #d3c4bd;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT SCALING 
+   ========================================================================== */
+@media (max-width: 768px) {
+    .footer-grid-layout {
+        flex-direction: column; 
+        gap: 35px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .feature-small {
+        width: 50%; 
+    }
+    .footer-bottom-flex {
+        flex-direction: column;
+        gap: 15px;
+        text-align:center;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-headline {
+        font-size: 2.3rem;
+    }
+    .feature-small {
+        width: 100%; 
+    }
+    .nav-links {
+        display: none; 
+    }
+}
