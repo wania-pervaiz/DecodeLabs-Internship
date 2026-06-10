@@ -37,6 +37,7 @@ To build a landing page that can:
 
 ### Project Structure
 
+<pre>
 DecodeLabs-Internship/
 │
 ├── project-1-jewellery-landing-page/
@@ -48,6 +49,8 @@ DecodeLabs-Internship/
 │   ├── ring.png
 │   ├── download.gif
 │   └── README.md
+</pre>
+
 
 ### How to Run
 1. Open the project folder in a code editor like VS Code
