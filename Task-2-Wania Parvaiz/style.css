@@ -1,0 +1,217 @@
+
+body {
+    background-color: #fcfbfa;
+    color: #2b2623;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Navigation --- */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #f2ede4;
+    position: sticky; top: 0; z-index: 100;
+}
+
+.logo { 
+    font-family: Georgia, serif;
+     font-size: 26px; 
+     font-weight: 600;
+      color: #9B5A45; 
+      margin-bottom: 12px; 
+}
+
+.logo span {
+     color: #708264; 
+     font-style: italic;
+ }
+
+.nav-links { 
+    list-style: none;
+     display: flex; 
+     gap: 24px; 
+}
+
+.nav-links a {
+     text-decoration: none; 
+     color: #736b66; 
+     font-size: 14px; 
+     font-weight: 500; 
+}
+
+.nav-links a:hover {
+     color:  #9B5A45; 
+}
+
+/* --- Hero Section --- */
+.hero-header {
+    background-color: #708264; /* Sage Green */
+    text-align: center; 
+    padding: 100px 20px;
+}
+
+.hero-text-content { 
+    max-width: 650px; 
+    margin: 0 auto; 
+    color: #ffffff;
+}
+
+.hero-header h1 { 
+    font-family: Georgia, serif;
+     font-size: 34px; 
+     margin-bottom: 14px; 
+}
+
+.hero-btn { 
+    display: inline-block; 
+    background-color: #ffffff; 
+    color: #526348;
+    text-decoration: none; 
+    padding: 12px 28px; 
+    border-radius: 30px; 
+    font-size: 14px; 
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* --- Container --- */
+.container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px 20px 60px 20px; 
+}
+
+.page-section { 
+    padding-top: 80px;
+ }
+
+ .section-title { 
+    font-family: Georgia, serif;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 35px; 
+}
+
+/* PASTE THE NEW CODE HERE */
+.section-box {
+    background-color: #9B5A45 ; 
+    color: #ffffff;            
+    border-radius: 16px;
+    padding: 60px 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section-box .section-title {
+    color: #ffffff;            
+    margin-bottom: 20px;
+}
+
+.section-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+ .section-title { font-family: Georgia, serif;
+     font-size: 28px;
+      text-align: center; 
+      margin-bottom: 35px; 
+}
+
+/* --- Recipe Cards --- */
+.recipe-card { 
+    background-color: #ffffff; 
+    border-radius: 16px; 
+    overflow: hidden; 
+    margin-bottom: 35px; 
+    border: 1px solid #f2ede4; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.recipe-image img { 
+    width: 100%; 
+    height: 280px; object-fit: cover;
+     display: block; 
+}
+
+.recipe-details { 
+    padding: 28px;
+ }
+
+.tag { 
+    display: inline-block; 
+    padding: 5px 12px; 
+    border-radius: 30px; 
+    font-size: 11px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    margin-bottom: 14px; 
+}
+
+.tag-green { background-color: #f0f3ee;
+     color: #526348;
+ }
+
+.tag-brown {
+     background-color: #f7f2ed; 
+    color: #8c735c;
+ }
+
+.recipe-details h2 {
+     font-family: Georgia, serif; 
+     font-size: 24px; 
+     margin-bottom: 12px; }
+
+.features { display: flex;
+     flex-wrap: wrap;
+      gap: 15px; font-size: 13px; 
+      color: #736b66; 
+      margin-top: 15px; 
+}
+
+/* --- Footer --- */
+.main-footer { 
+    background-color: #708264; /* Sage Green */
+    color: #ffffff; 
+    text-align: center; 
+    padding: 50px 20px; 
+}
+
+.footer-logo { 
+    font-family: Georgia, serif; 
+    font-size: 24px; color: #ffffff; 
+}
+
+.footer-logo span { 
+    color: #f2ede4; 
+    font-style: italic; 
+}
+
+/* --- Responsive Layout --- */
+@media (min-width: 768px) {
+    .navbar { 
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 24px 60px; 
+    }
+    
+    .recipe-card { 
+        flex-direction: row; 
+        min-height: 350px; 
+    }
+    
+    .recipe-card:nth-child(even) { 
+        flex-direction: row-reverse;
+     }
+    .recipe-image, .recipe-details { 
+        flex: 1; 
+    }
+}
